@@ -46,4 +46,10 @@ func main() {
 	fmt.Println(highScores)
 	fmt.Println(sort.IntsAreSorted(highScores))
 
+
+	// how to remove a value from slices based on index
+	// [234 321 555 654 777 897 987] -> delete the 555 - 2nd index
+	highScores = append(highScores[:2], highScores[2+1:]...)
+	fmt.Println(highScores)
+
 }
